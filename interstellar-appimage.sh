@@ -7,7 +7,7 @@ export APPIMAGE_EXTRACT_AND_RUN=1
 
 LIB4BN="https://raw.githubusercontent.com/VHSgunzo/sharun/refs/heads/main/lib4bin"
 APPIMAGETOOL="https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-$ARCH.AppImage"
-VERSION=demo-broken
+VERSION=demo
 
 mkdir -p ./AppDir
 cd ./AppDir
