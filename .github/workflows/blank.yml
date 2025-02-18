@@ -31,8 +31,12 @@ jobs:
 
     - name: Make AppImage
       run: |
-        chmod +x ./*-appimage.sh && ./*-appimage.sh
+        chmod +x ./*-appimage.sh
+        ./interstellar-appimage.sh
         mkdir dist
+        mv *.AppImage* dist/
+        rm -rf ./AppDir ./appimagetool
+        ./interstellar-appimage-broken.sh
         mv *.AppImage* dist/
 
     - name: Upload artifact
