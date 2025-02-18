@@ -33,7 +33,9 @@ wget "$LIB4BN" -O ./lib4bin
 chmod +x ./lib4bin
 xvfb-run -a -- ./lib4bin -s -k -e -v -p ./interstellar /usr/lib/libGL*
 ln -s ../data ./bin/data
+ln -s ../lib ./bin/lib
 ln -s ../../data ./shared/bin/data
+ln -s ../../lib ./shared/bin/lib
 
 # prepare sharun
 ln ./sharun ./AppRun
