@@ -31,7 +31,7 @@ jobs:
 
     - name: Make AppImage
       run: |
-        chmod +x ./*-appimage.sh
+        chmod +x ./*.sh
         ./interstellar-appimage.sh
         mkdir dist
         mv *.AppImage* dist/
