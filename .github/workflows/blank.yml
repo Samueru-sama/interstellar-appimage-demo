@@ -35,9 +35,6 @@ jobs:
         ./interstellar-appimage.sh
         mkdir dist
         mv *.AppImage* dist/
-        rm -rf ./AppDir ./appimagetool
-        ./interstellar-appimage-broken.sh
-        mv *.AppImage* dist/
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
